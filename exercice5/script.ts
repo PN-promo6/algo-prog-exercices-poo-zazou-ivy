@@ -22,12 +22,12 @@ class ConcertTicket {
    <p>Place number: ${this.placeNumber}</p>;
    <p>Date du concert: ${this.date}</p>;
    <p>Customer name: ${this.customer}</p>;
-   <p>Artist name : ${this.artistName}</p>;
-   `
+   `;
+
     if (this.artistName != "") {
-      concertVar = concertVar + `<p>Nom de l'artiste: ${this.artistName}</p>`
+      concertVar = concertVar + `<p>Nom de l'artiste: ${this.artistName}</p>`;
     };
-    return concertVar;
+    return (concertVar);
   }
 }
 
