@@ -1,4 +1,3 @@
-
 class ConcertTicket {
   public price: number;
   public placeNumber: string;
@@ -17,15 +16,15 @@ class ConcertTicket {
   }
 
   public concertDetails(): string {
-    let concertVar: string = `
+    let concertVar: string =
    <p>Price: ${this.price}</p>;
    <p>Place number: ${this.placeNumber}</p>;
-   <p>Date du concert: ${this.date}</p>;
+   <p>Date of concert: ${this.date}</p>;
    <p>Customer name: ${this.customer}</p>;
-   `;
+   ;
 
     if (this.artistName != "") {
-      concertVar = concertVar + `<p>Nom de l'artiste: ${this.artistName}</p>`;
+      concertVar = concertVar + <p>Nom de l'artiste: ${this.artistName}</p>;
     };
     return (concertVar);
   }
